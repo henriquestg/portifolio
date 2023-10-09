@@ -1,0 +1,50 @@
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	p {
+    background: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+  }
+
+	.nav-list{
+		ul {
+			display: flex;
+      list-style-type: none;
+		}
+
+		a {
+			text-decoration: none;
+
+			margin: 1rem;	
+			color: var(--gray);
+			text-align: center;
+			font-size: 1rem;
+			font-weight: 500;
+			line-height: 1.625rem;
+		}
+	}
+	.mobile-menu {
+		display: none;
+
+		ul {
+			display: flex;
+      list-style-type: none;
+		}
+
+		a {
+			text-decoration: none;
+
+			margin: 1rem;	
+			color: var(--light-Content, #A7A7A7);
+			text-align: center;
+			font-size: 1rem;
+			font-weight: 500;
+			line-height: 1.625rem;
+		}
+	}
+}

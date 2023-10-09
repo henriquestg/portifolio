@@ -1,0 +1,46 @@
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 5rem;
+
+  .profile {
+    h1 {
+      color: var(--mid-gray);
+      font-size: 3.625rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 4.375rem;
+    }
+
+    #text-color {
+      background: var(--gradient);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+      a { 
+        font-size: 1.8rem;
+        margin-right: 1rem;
+        color: var(--mid-gray);
+      }
+  }
+
+  .pic-profile {
+    display: flex;
+    background: var(--gradient);
+    border-radius: 14.375rem;
+    border: 5px solid transparent;
+    align-items: center;
+    justify-content: center;
+
+    #photo {
+      display: flex;
+      width: 21rem;
+      height: 21rem;
+    }
+  }
+
+}

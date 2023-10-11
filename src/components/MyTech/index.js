@@ -1,7 +1,7 @@
 import "./styles.scss"
 import { FaReact, FaJsSquare, FaNode, FaSass, FaFigma, FaAngular, FaGitAlt, FaCss3Alt } from "react-icons/fa";
 import { BiLogoTypescript } from "react-icons/bi";
-import { SiMysql, SiStyledcomponents} from "react-icons/si";
+import { SiMysql, SiStyledcomponents, SiTailwindcss} from "react-icons/si";
 
 export function Mytech () {
   return (
@@ -24,11 +24,11 @@ export function Mytech () {
         <div className="mid-tech">
         <a  title="Node"><FaNode /></a>
         <a  title="Angular"><FaAngular /></a>
+        <a  title="Tailwind"><SiTailwindcss /></a>
         <a  title="Mysql"><SiMysql /></a>
         <a  title="Figma"><FaFigma /></a>
         </div>
         </div>
-      
       </div>
   )
 }

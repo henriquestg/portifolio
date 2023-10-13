@@ -6,7 +6,7 @@ import photoProfile from "../../../public/profile-pic-redondo.png"
 
 export function Profile () {
   return (
-    <div className="profile-container">
+    <section id='profile' className="profile-container">
       <div className="profile">
       <h1>Hi👋, </h1>
       <h1> My name is </h1>
@@ -19,6 +19,6 @@ export function Profile () {
       <div className="pic-profile">
       <Image id='photo' src={photoProfile} alt="Table Imagem"  />
       </div>
-    </div>
+    </section>
   );
 }

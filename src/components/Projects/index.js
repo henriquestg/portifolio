@@ -6,7 +6,7 @@ import "./styles.scss"
 
 export function Projects () {
   return (
-    <div className="project-container">
+    <section id="project" className="project-container">
       <div className="title">
         <h1>Projects</h1>
         <p>Things I’ve built so far</p>
@@ -71,6 +71,6 @@ export function Projects () {
     </div>
     
     </div>
-    </div>
+    </section>
   )
 }

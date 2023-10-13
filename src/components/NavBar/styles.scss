@@ -1,4 +1,4 @@
-.nav-container {
+.menu {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -45,6 +45,8 @@
 			font-size: 1rem;
 			font-weight: 500;
 			line-height: 1.625rem;
+
+			transition: .2s;
 		}
 	}
 }

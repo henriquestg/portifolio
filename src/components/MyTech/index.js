@@ -5,7 +5,7 @@ import { SiMysql, SiStyledcomponents, SiTailwindcss} from "react-icons/si";
 
 export function Mytech () {
   return (
-      <div className="tech-container">
+      <section id="mytech" className="tech-container">
         <h1>My tech Stack</h1>
         <p>Technologies I’ve been working with recently</p>
         <div className="my-tech">
@@ -21,7 +21,7 @@ export function Mytech () {
         <a  title="Git"><FaGitAlt /></a>
         </div>
         <p>Technologies in development</p>
-        <div className="mid-tech">
+        <div className="container-skill">
         <a  title="Node"><FaNode /></a>
         <a  title="Angular"><FaAngular /></a>
         <a  title="Tailwind"><SiTailwindcss /></a>
@@ -29,6 +29,6 @@ export function Mytech () {
         <a  title="Figma"><FaFigma /></a>
         </div>
         </div>
-      </div>
+      </section>
   )
 }

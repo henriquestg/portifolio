@@ -4,7 +4,7 @@ import "./styles.scss"
 
 export function AboutMe () {
   return (
-    <div className="about-container">
+    <section id="about" className="about-container">
       <div className="about"> 
         <h1>About Henry</h1>
         <p>My name is Henrique Rigoni, I'm in the 3rd semester of the computer science course, I'm a technology enthusiast and I always want to be up to date on everything,
@@ -21,6 +21,6 @@ export function AboutMe () {
         <div className="about-profile">
       <Image id='photo-about' src={photoAbout} alt="Table Imagem"  />
       </div>
-    </div>
+    </section>
   )
 }

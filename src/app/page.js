@@ -4,13 +4,15 @@ import { Mytech } from '@/components/MyTech'
 import { AboutMe } from '@/components/AboutMe'
 import { Projects } from '@/components/Projects'
 
-import { FaGithub, FaLinkedin, FaInstagramSquare, FaRegEnvelope } from "react-icons/fa";
+
+import { FaGithub, FaLinkedin, FaInstagramSquare, FaRegEnvelope, FaAngleUp } from "react-icons/fa";
 
 import './page.scss'
 
 export default function Home() {
   return (
     <main>
+      <div className="full-container">
       <div className='container'>
         <NavBar />
         <Profile />
@@ -18,8 +20,10 @@ export default function Home() {
         <AboutMe />
         <Projects />
         <footer>
-          <div className='footer-container'>
+          <section id='contact' className='footer-container'>
+            <div className='text-color'>
             <p id='text-color'>Henrique.env</p>
+            </div>
             <div className='footer'>
               <FaRegEnvelope />
               <p>rigoni1912@gmail.com</p>
@@ -29,11 +33,16 @@ export default function Home() {
               <a href='https://www.instagram.com/henriquerigoni/' target="_blank"><FaInstagramSquare /></a> 
               </div>
             </div>
-          </div>
+          </section>
         </footer>
         <div className='affter'></div>
         </div>
-      <p id='text-footer'> Created by <span> Henrique Rigoni </span></p>
+      <p id='text-footer'> Copyright (c) 2023 created by <span> Henrique Rigoni </span></p>
+      </div>
+
+      <section className='btn-scroll'>
+      <a href='#home' className='home-scroll'><FaAngleUp /></a>
+      </section>
     </main>
   )
 }

@@ -1,27 +1,28 @@
 import './styles.scss'
 
-export function NavBar () { 
+export function NavBar () {
+	
 	return (
-		<nav className='nav-container'>
+		<nav className='menu'>
 			<p>
 				 Henrique.env
 			</p>
 			 <div className="nav-list">
 				<ul>
 					<li>
-						<a href='#'>Home</a>
+						<a href='#' id='home' >Home</a>
 					</li>
 					<li>
-						<a href='#'>About</a>
+						<a href='#about'>About</a>
 					</li>
 					<li>
-						<a href='#'>Tech Stack</a>
+						<a href='#mytech'>Tech Stack</a>
 					</li>
 					<li>
-						<a href='#'>Projects</a>
+						<a href='#project'>Projects</a>
 					</li>
 					<li>
-						<a href='#'>Contact</a>
+						<a href='#contact'>Contact</a>
 					</li>
 				</ul>
 			</div>

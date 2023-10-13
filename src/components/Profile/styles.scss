@@ -20,16 +20,16 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    
-      a { 
-        font-size: 1.8rem;
-        margin-right: 1rem;
-        color: var(--mid-gray);
 
-         &:hover {
-          color: var(--gray);
-         }
+    a {
+      font-size: 1.8rem;
+      margin-right: 1rem;
+      color: var(--mid-gray);
+
+      &:hover {
+        color: var(--gray);
       }
+    }
   }
 
   .pic-profile {
@@ -46,5 +46,48 @@
       height: 21rem;
     }
   }
+}
 
+@media (max-width: 966px) {
+    .profile-container {
+      padding: 0rem 2.5rem;
+      .profile {
+        h1 {
+          font-size: 2.5rem;
+        }
+      }
+      .pic-profile {
+        #photo {
+          display: flex;
+          width: 12rem;
+          height: 12rem;
+        }
+      }
+    }
+  }
+
+@media (max-width: 772px) {
+  .profile-container {
+    flex-direction: column;
+    margin-top: 7rem;
+
+    .profile {
+
+
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+
+    .pic-profile {
+      margin-top: 3rem;
+
+      #photo {
+        display: flex;
+        width: 18rem;
+        height: 18rem;
+
+      }
+    }
+  }
 }

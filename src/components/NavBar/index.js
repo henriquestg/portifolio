@@ -1,4 +1,3 @@
-import { FaBars } from "react-icons/fa";
 import './styles.scss'
 
 export function NavBar () { 

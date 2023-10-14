@@ -80,13 +80,13 @@
     }
 
     .pic-profile {
-      margin-top: 3rem;
+      margin-bottom: 3rem;
+      order: -1;
 
       #photo {
         display: flex;
         width: 18rem;
         height: 18rem;
-
       }
     }
   }

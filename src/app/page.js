@@ -10,6 +10,7 @@ import { FaGithub, FaLinkedin, FaInstagramSquare, FaRegEnvelope, FaAngleUp } fro
 import './page.scss'
 
 export default function Home() {
+  
   return (
     <main>
       <div className="full-container">

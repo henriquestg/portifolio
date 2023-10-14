@@ -1,53 +1,34 @@
-import Document from "next/document";
+"use client"
+import { useState } from "react";
 import "./styles.scss";
 
 export function NavBar() {
-  let show = true;
 
-  const menuSection = Document.querySelector(".menu-section");
-  const menuToggle = menuSection.querySelector(".menu-toggle");
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  menuToggle.addEventListener("click", () => {
-    Document.body.style.overflow = show ? "hidden" : "initial";
-
-    menuSection.classList.toggle("on", show);
-    show = !show;
-  });
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   return (
     <nav className="menu">
       <p>Henrique.env</p>
-
-      <div className="menu-section">
-        <div className="menu-toggle">
-          <div className="one"></div>
-          <div className="two"></div>
-          <div className="three"></div>
-        </div>
-
-        <div className="nav-list">
-          <ul>
-            <li>
-              <a href="#" id="home">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#mytech">Tech Stack</a>
-            </li>
-            <li>
-              <a href="#project">Projects</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
+    <div className="navbar-container">
+    <div className="navbar">
+      <div className={`menu-icon ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
       </div>
-      <script src="menu.js"></script>
+      <ul className={`nav-list ${menuOpen ? 'open' : ''}`}>
+        <li><a href="#" id="home">Home</a></li>
+        <li><a href="#mytech">My Tech</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    </div>
     </nav>
   );
 }
+

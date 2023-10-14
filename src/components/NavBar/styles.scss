@@ -1,23 +1,47 @@
 .menu {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: white;
+		background-color: transparent;
 
-	p {
-    background: var(--gradient);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 700;
-  }
-
-	.nav-list{
-		ul {
-			display: flex;
-      list-style-type: none;
+		p{
+			background: var(--gradient);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-weight: 700;
 		}
+}
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: white;
+	}
+	
+	.menu-icon {
+		display: none;
+		flex-direction: column;
+		cursor: pointer;
+	}
+	
+	.bar {
+		width: 25px;
+		height: 3px;
+		background-color: white;
+		margin: 3px 0;
+	}
+	
+	.nav-list {
+		list-style: none;
+		display: flex;
 
-		a {
+		ul {
+			margin-right: 20px;
+		}
+		
+		 a {
 			text-decoration: none;
 
 			margin: 1rem;	
@@ -26,90 +50,33 @@
 			font-size: 1rem;
 			font-weight: 500;
 			line-height: 1.625rem;
-			}
 		}
+	
 	}
+	
 
+@media (max-width: 768px) {
 
-@media (max-width: 650px) {
-	.nav-list {
-		display: none;
-
+	.menu {
+		padding: 0rem 3rem;
 	}
+  .menu-icon {
+    display: flex;
+  }
 
-	.menu-toggle {
-		width: 40px;
-		height: 30px;
-		margin-right: 40px;
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+		gap: 1rem;
+    top: 60px;
+    left: 0;
+    background-color: #181818e0;
+    width: 100%;
+    text-align: center;
+  }
 
-		
-	}
-
-	.one, .two, .three {
-		background-color: #fff;
-		height: 5px;
-		width: 100%;
-		margin: 6px auto;
-		flex-direction: column;
-
-		transition-duration: 0.3s;
-	}
-
-	.menu-section.on {
-		position: absolute;
-		top: 0;
-		right: 0;
-
-		background-color: #1b1b1b;
-
-
-		width: 50vw;
-		height: 70vw;
-
-		
-
-		z-index: 10;
-
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
-		.nav-list {
-			display: block;
-
-			ul {
-				display: block;
-				text-align: center;
-				margin-top: 5rem;
-			}
-
-			a{
-				transition-duration: 0.5s;
-				font-size: 1rem;
-				line-height: 2rem;
-				display: block;
-
-				color: var(--gray);
-				
-		}
-	}
-
-	.menu-toggle {
-		position: absolute;
-		right: 0;
-		top: 15px;
-
-		.one {
-				transform: rotate(45deg) translate(7px, 7px);
-		}
-
-		.two {
-			opacity: 0;
-		}
-
-		.three {
-			transform: rotate(-45deg) translate(8px, -9px);
-		}
-	}
-}
+  .nav-list.open {
+    display: flex;
+  }
 }

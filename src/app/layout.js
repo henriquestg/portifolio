@@ -1,7 +1,11 @@
 import './globals.scss'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'], })
+import { Roboto } from 'next/font/google'
+ 
+const inter = Roboto({
+  weight: '700',
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata = {
   title: 'Henrique Rigoni',

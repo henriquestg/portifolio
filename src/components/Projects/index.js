@@ -19,7 +19,7 @@ export function Projects () {
         <div className="projects">
         <h2>My ecommerce</h2>
         <p>Um site criado para ter conceito ecommerce para venda de móveis</p>
-        <p>Tech stack: React, Sass, JavaScript</p>
+        <p>Tech stack: Next.js React, Sass, JavaScript</p>
         <div className="teck-links"> 
         <div className="link"> 
         <FaLink />

@@ -12,7 +12,7 @@ export function AboutMe () {
         </p>
         <p>    
           I have solid knowledge in <strong>Typescript and Javascript</strong> as well as frameworks such as <strong>React.js and React Native</strong> for mobile apps.
-          I've already done other projects using other css libraries, such as: <strong>Styled-components, Sass e Native Base.</strong>
+          I've already done other projects using other css libraries, such as: <strong>Styled-components, Sass and Native Base.</strong>
         </p>
         <p>  
         I am currently developing skills in technologies such as <strong>Node.js, Angular, Tailwind, MySql and Figma</strong>

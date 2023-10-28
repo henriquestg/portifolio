@@ -32,45 +32,6 @@ export function Projects () {
         </div>
     </div>
     </div>
-
-    <div className="projects-preview">
-        <Image id="project-photo" src={ProjectPhoto} alt="foto projeto" />
-        <div className="projects">
-        <h2>Nome do projeto</h2>
-        <p>Resumo do projeto....</p>
-        <p>Tech stack: Tecnologias usadas no projeto</p>
-        <div className="teck-links"> 
-        <div className="link"> 
-        <FaLink />
-          <a href="#" target="_blank">Live preview</a>
-        </div>
-        <div className="link"> 
-        <FaGithub />
-        <a href="#" target="_blank">View code</a>
-        </div>
-        </div>
-    </div>
-    </div>
-
-    <div className="projects-preview">
-        <Image id="project-photo" src={ProjectPhoto} alt="foto projeto" />
-        <div className="projects">
-        <h2>Nome do projeto</h2>
-        <p>Resumo do projeto....</p>
-        <p>Tech stack: Tecnologias usadas no projeto</p>
-        <div className="teck-links"> 
-        <div className="link"> 
-        <FaLink />
-          <a href="#" target="_blank">Live preview</a>
-        </div>
-        <div className="link"> 
-        <FaGithub />
-        <a href="#" target="_blank">View code</a>
-        </div>
-        </div>
-    </div>
-    </div>
-    
     </div>
     </section>
   )

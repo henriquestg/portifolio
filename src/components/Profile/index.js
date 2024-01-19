@@ -19,6 +19,7 @@ export function Profile () {
       <div className="pic-profile">
       <Image id='photo' src={photoProfile} alt="Table Imagem"  />
       </div>
+      
     </section>
   );
 }

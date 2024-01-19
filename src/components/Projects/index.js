@@ -1,6 +1,5 @@
 import Image from "next/image"
 import { FaLink, FaGithub} from "react-icons/fa";
-import ProjectPhoto from "../../../public/Rectangle.png"
 import Ecommerce from "../../../public/site-ecommerce.png"
 import "./styles.scss"
 

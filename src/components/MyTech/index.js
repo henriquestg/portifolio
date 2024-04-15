@@ -16,7 +16,7 @@ export function Mytech () {
         <a  title="TypeScript"><BiLogoTypescript /></a>
         <a  title="Sass"><FaSass /></a>
         <a  title="CSS"><FaCss3Alt /></a>
-        <a  title="styled-components"><SiStyledcomponents /></a>
+        <a  title="styled-components"><SiStyledcomponents/></a>
         <a  title="React-Native"><FaReact /></a>
         <a  title="Git"><FaGitAlt /></a>
         </div>

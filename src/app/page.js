@@ -12,7 +12,7 @@ import './page.scss'
 export default function Home() {
   
   return (
-    <main>
+    <main id='home'>
       <div className="full-container">
       <div className='container'>
         <NavBar />

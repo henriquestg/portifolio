@@ -22,7 +22,7 @@ export function Projects () {
         <div className="teck-links"> 
         <div className="link"> 
         <FaLink />
-          <a href="https://my-ecommerce-alpha-rust.vercel.app/" target="_blank">Live preview</a>
+          <a href="https://my-ecommerce-navy.vercel.app/" target="_blank">Live preview</a>
         </div>
         <div className="link"> 
         <FaGithub />

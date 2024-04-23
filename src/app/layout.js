@@ -1,7 +1,7 @@
 import './globals.scss'
-import { Roboto } from 'next/font/google'
+import { Inter } from 'next/font/google'
  
-const inter = Roboto({
+const inter = Inter({
   weight: '700',
   subsets: ['latin'],
   display: 'swap',

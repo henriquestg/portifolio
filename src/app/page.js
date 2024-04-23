@@ -1,3 +1,4 @@
+"use client"
 import { NavBar } from '@/components/NavBar'
 import { Profile } from '@/components/Profile'
 import { Mytech } from '@/components/MyTech'
@@ -8,6 +9,7 @@ import { Projects } from '@/components/Projects'
 import { FaGithub, FaLinkedin, FaInstagramSquare, FaRegEnvelope, FaAngleUp } from "react-icons/fa";
 
 import './page.scss'
+import { Link } from 'react-scroll'
 
 export default function Home() {
   
@@ -42,7 +44,7 @@ export default function Home() {
       </div>
 
       <section className='btn-scroll'>
-      <a href='#home' className='home-scroll'><FaAngleUp /></a>
+      <Link to='home' smooth={true} duration={500} className='home-scroll'><FaAngleUp /></Link>
       </section>
     </main>
   )

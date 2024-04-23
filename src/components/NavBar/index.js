@@ -1,19 +1,9 @@
 "use client"
 import { useState } from "react";
+import { Link } from "react-scroll";
 import "./styles.scss";
 
 export function NavBar() {
-
- const handleSmoothScroll = (e) => {
-    e.preventDefault();
-    const targetId = e.target.getAttribute('href').slice(1);
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      targetElement.scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
-  };;
 
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -23,23 +13,22 @@ export function NavBar() {
 
   return (
     <nav className="menu">
-    <p>Henrique.env</p>
-    <div className="navbar-container">
-    <div className="navbar">
-      <div className={`menu-icon ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
-        <div className="bar"></div>
-        <div className="bar"></div>
-        <div className="bar"></div>
+      <p>Henrique.env</p>
+      <div className="navbar-container">
+        <div className="navbar">
+          <div className={`menu-icon ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+            <div className="bar"></div>
+            <div className="bar"></div>
+            <div className="bar"></div>
+          </div>
+          <ul className={`nav-list ${menuOpen ? 'open' : ''}`}>
+            <li><Link to="mytech" smooth={true} duration={500} onClick={toggleMenu}>My Tech</Link></li>
+            <li><Link to="about" smooth={true} duration={500} onClick={toggleMenu} className="style-link">About</Link></li>
+            <li><Link to="project" smooth={true} duration={500} onClick={toggleMenu} className="style-link">Project</Link></li>
+            <li><Link to="contact" smooth={true} duration={500} onClick={toggleMenu} className="style-link">Contact</Link></li>
+          </ul>
+        </div>
       </div>
-      <ul className={`nav-list ${menuOpen ? 'open' : ''}`}>
-        <li><a href="#mytech" onClick={handleSmoothScroll}>My Tech</a></li>
-        <li><a href="#about"onClick={handleSmoothScroll}>About</a></li>
-        <li><a href="#project" onClick={handleSmoothScroll}>Project</a></li>
-        <li><a href="#contact"onClick={handleSmoothScroll}>Contact</a></li>
-      </ul>
-    </div>
-    </div>
     </nav>
   );
 }
-

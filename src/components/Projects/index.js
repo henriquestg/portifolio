@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { FaLink, FaGithub} from "react-icons/fa";
 import Ecommerce from "../../../public/site-ecommerce.png"
+import todoList from "../../../public/site-todo-list.png"
 import "./styles.scss"
 
 
@@ -26,7 +27,26 @@ export function Projects () {
         </div>
         <div className="link"> 
         <FaGithub />
-        <a href="https://github.com/henriquestg/my-ecommerce/tree/master" target="_blank">View code</a>
+        <a href="https://github.com/henriquestg/my-ecommerce" target="_blank">View code</a>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div className="projects-preview">
+        <Image id="project-photo" src={todoList} alt="foto projeto" />
+        <div className="projects">
+        <h2>Todo List</h2>
+        <p>Um site criado para ser usado no meu dia a dia no trabalho para eventuais tarefas</p>
+        <p>Tech stack: html, css, JavaScript</p>
+        <div className="teck-links"> 
+        <div className="link"> 
+        <FaLink />
+          <a href="https://todo-list-wine-eight-62.vercel.app/" target="_blank">Live preview</a>
+        </div>
+        <div className="link"> 
+        <FaGithub />
+        <a href="https://github.com/henriquestg/todo-list" target="_blank">View code</a>
         </div>
         </div>
     </div>

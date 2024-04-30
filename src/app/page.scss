@@ -125,6 +125,8 @@ main {
 
       .footer {
         padding: 0rem 3rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
       }
 
       .text-color {
@@ -137,4 +139,9 @@ main {
     }
   }
 }
-  
+@media (max-width: 490px) {
+	.footer-links {
+		padding-right: 0.5rem;
+	}
+}
+

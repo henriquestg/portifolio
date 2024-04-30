@@ -37,7 +37,7 @@ export function Projects () {
     <div className="projects-preview">
         <Image id="project-photo" src={todoList} alt="foto projeto" />
         <div className="projects">
-        <h2>Todo List</h2>
+        <h2>Lista de tarefas</h2>
         <p>Um site criado para ser usado no meu dia a dia no trabalho para eventuais tarefas</p>
         <p>Tech stack: html, css, JavaScript</p>
         <div className="teck-links"> 
@@ -56,7 +56,7 @@ export function Projects () {
     <div className="projects-preview">
         <Image id="project-photo" src={siteRelogio} alt="foto projeto" />
         <div className="projects">
-        <h2>Todo List</h2>
+        <h2>Relogio Digital</h2>
         <p>Site das horas do dia</p>
         <p>Tech stack: html, css, JavaScript</p>
         <div className="teck-links"> 

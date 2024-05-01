@@ -4,6 +4,7 @@
   justify-content: center;
   margin-top: 15rem;
 
+  word-break: break-all;
   
 
   .about {
@@ -11,6 +12,8 @@
     flex-direction: column;
     width: 35%;
     gap: 1.5rem;
+
+
 
     h1 {
       color: var(--mid-gray);
@@ -56,4 +59,10 @@
     }
   }
 
+}
+@media (max-width: 440px) {
+  .about-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }

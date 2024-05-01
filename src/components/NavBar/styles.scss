@@ -84,3 +84,10 @@
     display: flex;
   }
 }
+
+@media (max-width: 440px) {
+  .menu {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}

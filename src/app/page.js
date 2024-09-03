@@ -24,9 +24,9 @@ export default function Home() {
         <footer>
           <footer>
             <div>
-            <p className={styles.logoFooter}>Henrique.env</p>
+            <span className={styles.logoFooter}>Henrique.env</span>
             </div>
-            <div className={styles.footerLinks}>
+            <div className={styles.footer}>
               <FaRegEnvelope />
               <p>rigoni1912@gmail.com</p>
               <div className={styles.footerLinks}>

@@ -1,7 +1,7 @@
 "use client"
+import styles from "./navBar.module.scss";
 import { useState } from "react";
 import { Link } from "react-scroll";
-import "./styles.scss";
 
 export function NavBar() {
 
@@ -12,16 +12,16 @@ export function NavBar() {
   };
 
   return (
-    <nav className="menu">
+    <nav className={styles.menu}>
       <p>Henrique.env</p>
-      <div className="navbar-container">
-        <div className="navbar">
-          <div className={`menu-icon ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
-            <div className="bar"></div>
-            <div className="bar"></div>
-            <div className="bar"></div>
+      <div>
+        <div className={styles.navbar}>
+          <div className={`${styles.icon} ${menuOpen ? styles.open : ''}`} onClick={toggleMenu}>
+            <div className={styles.bar}></div>
+            <div className={styles.bar}></div>
+            <div className={styles.bar}></div>
           </div>
-          <ul className={`nav-list ${menuOpen ? 'open' : ''}`}>
+          <ul className={`${styles.list} ${menuOpen ? styles.open : ''}`}>
             <li><Link to="mytech" smooth={true} duration={500} onClick={toggleMenu}>My Tech</Link></li>
             <li><Link to="about" smooth={true} duration={500} onClick={toggleMenu} className="style-link">About</Link></li>
             <li><Link to="project" smooth={true} duration={500} onClick={toggleMenu} className="style-link">Project</Link></li>

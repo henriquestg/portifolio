@@ -1,4 +1,4 @@
-.tech-container {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,7 +22,7 @@
     margin-top: 1rem;
   }
 
-  .my-tech {
+  .tech {
       display: flex;
       flex-direction: column;
       margin-top: 8rem;
@@ -37,7 +37,7 @@
       font-weight: 400;
       } 
       
-      .container-skill {
+      .containerSkill {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -64,7 +64,7 @@
 }
 
 @media (max-width: 520px) {
-  .tech-container {
+  .container {
     margin-top: 10rem;
     padding: 0rem 2.5rem;
 
@@ -75,8 +75,8 @@
       font-size: 1.2rem;
     }
 
-    .my-tech {
-      .container-skill {
+    .tech {
+      .containerSkill {
         gap: 2rem;
         
         a {
@@ -88,7 +88,7 @@
 }
 
 @media (max-width: 490px) {
-	.tech-container {
+	.container {
 		margin-left: 3rem;
     margin-right: 3rem;
 	}

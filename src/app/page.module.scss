@@ -1,47 +1,38 @@
-main {
+.home {
   display: flex;
   flex-direction: column;
+  margin-bottom: 3rem;
   
 
-  .full-container {
+  .container {
     display: flex;
     flex-direction: column;
     padding: 1rem 11rem;
     align-items: center;
     gap: 3rem;
 
-    .container {
+    .page {
       display: flex;
       flex-direction: column;
     }
 
-    .footer-container {
+    footer {
+      width: 100%;
       display: flex;
-
-      justify-content: space-between;
       margin-top: 10rem;
       color: var(--gray);
       margin-bottom: 2.5rem;
-
-      #text-color {
-        background: var(--gradient);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-
-    }
-
-    .footer {
-      display: flex;
+      justify-content: space-between;
       align-items: center;
-      justify-content: center;
-      text-align: center;
-      gap: 0.5rem;
 
     }
 
-    .footer-links {
+    .footerLinks {
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .footerLinks {
       display: flex;
       gap: 0.5rem;
       margin-left: 5rem;
@@ -62,11 +53,13 @@ main {
       height: 0.01rem;
       width: 100%;
       background-color: var(--footer);
+      display: flex;
+      justify-content: center;
     }
 
-    #text-footer {
+    .textFooter {
       color: var(--gray);
-      margin-bottom: 1rem;
+      margin-top: 1rem;
     }
 
     span {
@@ -77,7 +70,7 @@ main {
     }
   }
 
-  .home-scroll {
+  .homeScroll {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,23 +79,23 @@ main {
     height: 3rem;
     border: none;
     border-radius: 50%;
-
     position: fixed;
     bottom: 3rem;
     right: 2rem;
 
-    color: rgb(48, 47, 47);
-    background-color: var(--gray);
+    color: var(--gray);
+    background-color: var(--mid-gray);
+    transition: 0.3s;
 
     &:hover {
-      background-color: var(--mid-gray);
+      transform: scale(0.95);
     }
   }
 
-  .btn-scroll {
+  .btnScroll {
     display: flex;
 
-    justify-content: end;
+    justify-content: flex-end;
     margin-right: 5rem;
   }
 
@@ -110,7 +103,7 @@ main {
 
 @media (max-width: 1154px) {
   main {
-     .full-container{
+     .container{
       padding: 1rem 2rem;
     }
     
@@ -118,29 +111,27 @@ main {
 }
 
 @media (max-width: 600px) {
-  .full-container {
-    .footer-container {
+  .container {
+    footer {
       display: flex;
       flex-direction: column;
 
-      .footer {
-        padding: 0rem 3rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
+      .logoFooter {
+        display: none;
       }
 
-      .text-color {
-        display: none;
+      .footerLinks {
+        margin-right: 2rem
       }
     }
 
-    #text-footer {
+    .textFooter {
       font-size: 0.8rem;
     }
   }
 }
 @media (max-width: 490px) {
-	.footer-links {
+	.footerLinks {
 		padding-right: 0.5rem;
 	}
 }

@@ -1,16 +1,16 @@
-import "./styles.scss"
+import styles from "./myTech.module.scss"
 import { FaReact, FaJsSquare, FaNode, FaSass, FaFigma, FaAngular, FaGitAlt, FaCss3Alt } from "react-icons/fa";
 import { BiLogoTypescript } from "react-icons/bi";
 import { SiMysql, SiStyledcomponents, SiTailwindcss} from "react-icons/si";
 
 export function Mytech () {
   return (
-      <section id="mytech" className="tech-container">
+      <section id="mytech" className={styles.container}>
         <h1>My tech Stack</h1>
         <p>Technologies I’ve been working with recently</p>
-        <div className="my-tech">
+        <div className={styles.tech}>
         <p>Technologies developed</p>
-        <div className="container-skill">
+        <div className={styles.containerSkill}>
         <a  title="react"><FaReact /></a>
         <a  title="JavaScript"><FaJsSquare /></a>
         <a  title="TypeScript"><BiLogoTypescript /></a>
@@ -21,7 +21,7 @@ export function Mytech () {
         <a  title="Git"><FaGitAlt /></a>
         </div>
         <p>Technologies in development</p>
-        <div className="container-skill">
+        <div className={styles.containerSkill}>
         <a  title="Node"><FaNode /></a>
         <a  title="Angular"><FaAngular /></a>
         <a  title="Tailwind"><SiTailwindcss /></a>

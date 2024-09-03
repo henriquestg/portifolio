@@ -1,4 +1,4 @@
-.profile-container {
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -6,6 +6,9 @@
   margin-top: 13rem;
 
   .profile {
+    display: flex;
+    flex-direction: column;
+
     h1 {
       color: var(--mid-gray);
       font-size: 3.625rem;
@@ -14,25 +17,35 @@
       line-height: 4.375rem;
     }
 
-    #text-color {
-      background: var(--gradient);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
+    .socialMidia {
+      display: flex;
+      align-items: center;
 
-    a {
-      font-size: 1.8rem;
-      margin-right: 1rem;
-      color: var(--mid-gray);
+      a {
+        display: flex;
+        font-size: 1.8rem;
+        margin-right: 1rem;
+        color: var(--mid-gray);
+        transition: 0.3s;
+  
+        &:hover {
+          color: var(--gray);
+          transform: scale(0.95);
+        }
+      }
+      .curriculum {
+        background: var(--gradient);
+        padding: 0.4rem 1rem;
+        border-radius: 1rem;
+        font-size: 0.8rem;
 
-      &:hover {
-        color: var(--gray);
+        text-decoration: none;
       }
     }
+
   }
 
-  .pic-profile {
+  .picture {
     display: flex;
     background: var(--gradient);
     border-radius: 14.375rem;
@@ -49,14 +62,14 @@
 }
 
 @media (max-width: 966px) {
-    .profile-container {
+    .container {
       padding: 0rem 2.5rem;
       .profile {
         h1 {
           font-size: 2.5rem;
         }
       }
-      .pic-profile {
+      .picture {
         #photo {
           display: flex;
           width: 12rem;
@@ -67,7 +80,7 @@
   }
 
 @media (max-width: 772px) {
-  .profile-container {
+  .container {
     flex-direction: column;
     margin-top: 7rem;
 
@@ -79,7 +92,7 @@
       }
     }
 
-    .pic-profile {
+    .picture {
       margin-bottom: 3rem;
       order: -1;
 

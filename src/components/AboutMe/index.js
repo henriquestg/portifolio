@@ -1,11 +1,11 @@
 import Image from "next/image"
 import photoAbout from "../../../public/HenriqueDev.jpeg"
-import "./styles.scss"
+import styles from "./about.module.scss"
 
 export function AboutMe () {
   return (
-    <section id="about" className="about-container">
-      <div className="about"> 
+    <section id="about" className={styles.container}>
+      <div className={styles.about}> 
         <h1>About Henry</h1>
         <p>My name is Henrique Rigoni, I'm in the 3rd semester of the computer science course, I'm a technology enthusiast and I always want to be up to date on everything,
           I'm also taking a React Native (ignite) course through rocketseat to improve my knowledge even further.
@@ -18,9 +18,9 @@ export function AboutMe () {
         I am currently developing skills in technologies such as <strong>Node.js, Angular, Tailwind, MySql and Figma</strong>
         </p>
         </div>
-        <div className="about-profile">
-      <Image id='photo-about' src={photoAbout} alt="Table Imagem"  />
+        <div className={styles.profile}>
+      <Image src={photoAbout} alt="photo Imagem"  />
       </div>
     </section>
   )
-}
+} 
